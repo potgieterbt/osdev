@@ -1,3 +1,9 @@
+.*.sw*
+dist/
+*.log
+*.o
+*.out
+
 # Prerequisites
 *.d
 
