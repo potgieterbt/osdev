@@ -1,0 +1,22 @@
+             VMA              LMA     Size Align Out     In      Symbol
+               0                0   100000     1 . = 1M
+          100000                0        0     1 _kernel_start = .
+          100000                0        0     1 _kern_virtual_offset = 0xffffffff80000000
+          100000                0 ffffffff80000000     1 . += _kern_virtual_offset
+ffffffff80100000           100000       16    16 .text
+ffffffff80100000           100000        0     4         dist/main.o:(.text)
+ffffffff80100000           100000       16    16         dist/main.o:(.ltext)
+ffffffff80100000           100000       16     1                 kernel_start
+ffffffff80101000 ffffffff80101000        0     1 .rodata
+ffffffff80101000 ffffffff80101000        0     1 .data
+ffffffff80101000 ffffffff80101000        0     1 .bss
+ffffffff80101000 ffffffff80101000        0     1 _kernel_end = .
+ffffffff80101000 ffffffff80101000        0     1 _kernel_physical_end = . - _kern_virtual_offset
+               0                0       29     1 .comment
+               0                0       29     1         <internal>:(.comment)
+               0                0       a8     8 .symtab
+               0                0       a8     8         <internal>:(.symtab)
+               0                0       3d     1 .shstrtab
+               0                0       3d     1         <internal>:(.shstrtab)
+               0                0       59     1 .strtab
+               0                0       59     1         <internal>:(.strtab)
